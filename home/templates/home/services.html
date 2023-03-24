@@ -1,0 +1,67 @@
+ {% extends 'home/base.html' %}
+ {% load static %}
+ 
+ {% block content %}
+
+
+ <style>
+        h1{
+              text-align: center;
+        }
+        li{
+              font-size: 20px;
+        }
+ </style>
+
+       <div class="about-container">
+    <!--img-->
+   
+    <!--about-me-text-->
+    <div class="about-text">
+        <br>
+            <h1>วิธีการใช้งานเว็บการตรวจจับวัตถุเพื่อแยกประเภทอุปกรณ์อิเล็กทรอนิกส์</h1>
+           <br><br>
+
+            <li>กดที่เมนูบาร์ "การตรวจจับวัตถุเพื่อแยกประเภทอุปกรณ์อิเล็กทรอนิกส์โดยใช้โครงข่ายประสาทเทียม"</li> 
+            <br>
+            <div align= "center" >
+                <img src="{% static 'images/home.png' %}"  width="60%" height="60%"> 
+            </div><br>
+            <li>เลื่อนลงมาแล้วกดที่ปุ่ม "การตรวจสอบ"</li> 
+            <br>
+            <div align= "center" >
+                <img src="{% static 'images/ser.jpg' %}"  width="60%" height="60%"> 
+            </div><br>
+            <li>กดที่ปุ่ม "Choose File"</li> 
+            <br>
+            <div align= "center" >
+                <img src="{% static 'images/Choose.jpg' %}"  width="60%" height="60%"> 
+            </div><br>
+            <li>เลือกภาพที่ต้องการตรวจสอบโดยภาพต้องเห็นลักษณะของอุปกรณ์อย่างชัดเจนแล้วกด "Open"</li> 
+            <br>
+            <div align= "center" >
+                <img src="{% static 'images/upload.jpg' %}"  width="60%" height="60%">
+            </div><br>
+            <li>เมื่อเลือกรูปเสร้จแล้วให้กดที่ "Check"</li> 
+            <br>
+            <div align= "center" >
+                <img src="{% static 'images/Check.jpg' %}"  width="60%" height="60%">
+            </div><br>
+            <li>ระบบจะทำการตรวจสอบแล้วส่งภาพตอบกลับ ใช้เวลาในการตรวจประมาณ 5-10 วินาที</li> 
+            <br>
+            <div align= "center" >
+                <img src="{% static 'images/addy.jpg' %}"  width="60%" height="60%">
+            </div><br>
+        
+            
+        </div>
+    </div>
+
+
+ {% endblock content %}
+
+
+
+
+
+

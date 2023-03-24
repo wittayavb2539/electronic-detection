@@ -1,0 +1,54 @@
+ {% extends 'home/base.html' %}
+ {% load static %}
+ 
+ {% block content %}
+
+     <style>
+
+      div.pricing-header{
+       background-repeat: no-repeat;
+       background-size: cover;
+       height: 650px;
+       background-image: url("https://upload.wikimedia.org/wikipedia/commons/d/d9/Arduino_ftdi_chip-1.jpg") ;
+       color: white;
+      }
+
+      h1.display-4{
+              text-shadow: 2px 2px 5px red;
+              font-size: 50px;
+      }
+        div.fs-5{
+
+              background-color: black;
+              background: rgba(60, 60, 60, 0.6);
+              filter: alpha(opacity=60);
+              border-radius: 20px;
+
+       }
+       p.fs-5{
+              color: white;
+              font-size: 80px;  
+              margin: 30px;
+              padding: 10px;
+       }
+
+    </style>
+
+        <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+                <h1 class="display-4 ">การตรวจจับวัตถุเพื่อแยกประเภทอุปกรณ์อิเล็กทรอนิกส์โดยใช้โครงข่ายประสาทเทียม</h1>
+                <img src="https://inwfile.com/s-du/y5wkry.png" ><br><br>
+                <div class="fs-5">
+                     <p class="fs-5 ">ในการเรียนการสอนในวิชาอิเล็กทรอนิกส์มีนักศึกษาบางคนที่ไม่ค่อยเข้าใจในอุปกรณ์ต่างๆของอุปกรณ์อิเล็กทรอนิกส์ซึ่งในบางครั้งจะเป็นผลเสียในการเรียนรู้จะทำให้ไม่เข้าใจเนื้อหาจะส่งผลให้เรียนไม่ทันเพื่อนที่มีพื้นฐานแล้วจากปัญหาข้างต้นผู้จัดทำจึงได้มีแนวคิด เพื่อที่จะจัดทำ การตรวจจับวัตถุเพื่อแยกประเภทอุปกรณ์อิเล็กทรอนิกส์โดยใช้โครงข่ายประสาทเทียม เพื่อที่จะให้นักศึกษาหรือผู้ที่สนใจได้รับรู้และสามารถแก้ไขปัญหาในเรื่องของการแยกอุปกรณ์ได้ โดยใช้แนวทางของ วงจรการพัฒนาระบบ</p>
+              </div>
+         </div>
+
+
+
+
+ {% endblock content %}
+
+
+
+
+
+

@@ -1,0 +1,109 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>ระบบตรวจจับวัตถุเพื่อแยกประเภทอุปกรณ์อิเล็กทรอนิกส์โดยใช้โครงข่ายประสาทเทียม</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/pricing/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="https://getbootstrap.com/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Favicons -->
+<link rel="apple-touch-icon" href="{% static 'images/003.ico' %}" sizes="180x180">
+<link rel="icon" href="{% static 'images/003.ico' %}" sizes="32x32" type="image/png">
+<link rel="icon"href="{% static 'images/003.ico' %}" sizes="16x16" type="image/png">
+<link rel="manifest" href="https://getbootstrap.com/docs/5.0/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="https://getbootstrap.com/docs/5.0/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
+<link rel="icon" href="{% static 'images/003.ico' %}">
+<meta name="theme-color" content="#7952b3">
+
+
+    <style>
+      div.d-flex{
+        list-style-type: none;
+        margin: 10px;
+        padding: 10px;
+        overflow: hidden;
+        background-color: #333;
+      }
+      a.me-3{
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+      }
+      a.me-3:hover{
+          background-color: #111;
+      }
+
+
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="body {
+  background-image: linear-gradient(180deg, #eee, #fff 100px, #fff);
+}
+
+.container {
+  max-width: 960px;
+}
+
+.pricing-header {
+  max-width: 700px;
+}" rel="stylesheet">
+  </head>
+  <body>
+    
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="check" viewBox="0 0 16 16">
+    <title>Check</title>
+    <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+  </symbol>
+</svg>
+
+<div class="container py-3">
+  <header>
+    <div class="d-flex ">
+      <a href="/" class="d-flex align-items-center text-white text-decoration-none">
+
+        <img src="{% static 'images/003.ico' %}" width="50" >
+        <span class="fs-4">electronic device using Artificial neural networks</span>
+      </a>
+
+      <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+        <a class="me-3 py-2 text-white text-decoration-none" href="{% url 'index' %}">หน้าแรก</a>
+        <a class="me-3 py-2 text-white text-decoration-none" href="/gender">ตรวจสอบ</a>
+        <a class="me-3 py-2 text-white text-decoration-none" href="{% url 'services' %}">การใช้งาน</a>
+      </nav>
+    </div>
+    <main>
+
+
+
+      {% block content %}
+      {% endblock content %}
+      
+    
+    </main>
+    
+  </header>
+
+  
+
+  
+</div>
+
+
+    
+  </body>
+</html>

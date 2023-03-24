@@ -1,0 +1,48 @@
+{% extends 'home/base.html' %}
+ {% load static %}
+ 
+ {% block content %}
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+
+
+    <style>
+        div.b1{
+            margin-top: 20%;
+            position: relative;
+            top: 50%;
+            width: 100%;
+            text-align: center;
+            font-size: 18px;
+        }
+        button{
+            position: relative;
+            top: 60%;
+            width: 100%;
+            align-items: center;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1></h1>
+    <form method = "post" enctype="multipart/form-data">
+        <div class="b1">
+            {% csrf_token %}
+            {{ form.as_p }}
+        </div>
+        <button type="submit">Check</button>
+    </form>  
+</table>
+</body>
+</html>
+
+{% endblock content %}
